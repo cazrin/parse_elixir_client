@@ -9,7 +9,7 @@ defmodule ParseClient.Mixfile do
     [
       app: :parse_client,
       version: "0.3.0",
-      elixir: "~> 1.0.0",
+      elixir: "~> 1.2.0",
       name: "Parse Client",
       description: @description,
       package: package,
