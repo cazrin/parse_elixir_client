@@ -44,7 +44,7 @@ defmodule ParseClient.Requests do
       %{score: 42, objectId: "sOxpug2373", playerName: "Tommy"}
   """
   def process_response_body(body) do
-    case Poison.decode(body, keys: :atoms!) do
+    case Poison.decode(body, keys: :atoms) do
       {:ok, text} -> text
       {:error, _} -> "An error has occurred while processing the json response"
     end
